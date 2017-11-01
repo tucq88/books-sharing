@@ -6,3 +6,11 @@
  */
 
 require('./bootstrap');
+
+window.Vue = require('vue');
+
+Vue.component('landing-notify', require('./components/LandingNotify.vue'));
+
+const app = new Vue({
+  el: '#app'
+});
