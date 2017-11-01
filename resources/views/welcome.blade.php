@@ -1,95 +1,52 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+        <title>PS:Books</title>
+        <link rel="stylesheet" href="./css/app.css">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+        <section class="hero is-info is-fullheight">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item logo" href="../">PS:Books</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title">
+                            Coming Soon
+                        </h1>
+                        <h2 class="subtitle">
+                            This is the best platform for books lovers
+                            We handle billions of books every year for forward-thinking in knowledge sharing around
+                            the world.
+                        </h2>
+                        <div class="box">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                            <div class="field is-grouped">
+                                <p class="control is-expanded">
+                                    <input class="input" type="text" placeholder="Enter your email">
+                                </p>
+                                <p class="control">
+                                    <a class="button is-info">
+                                        Notify Me
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <script async type="text/javascript" src="./js/app.js"></script>
     </body>
 </html>

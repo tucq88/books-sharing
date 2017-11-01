@@ -1,18 +1,3 @@
-
-window._ = require('lodash');
-
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
- * code may be modified to fit the specific needs of your application.
- */
-
-try {
-    window.$ = window.jQuery = require('jquery');
-
-    require('bootstrap-sass');
-} catch (e) {}
-
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -51,3 +36,15 @@ if (token) {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+/**
+ * Bulma script
+ */
+(function() {
+  let burger = document.querySelector('.nav-toggle');
+  let menu = document.querySelector('.nav-menu');
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+  });
+})();
