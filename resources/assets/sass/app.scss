@@ -5,6 +5,12 @@
 // Bulma
 @import "~bulma";
 
+// Pages
+@import "_directives";
+@import "_layout_header";
+@import "_page_login";
+
+
 html, body {
   font-family: 'Open Sans', serif;
 }

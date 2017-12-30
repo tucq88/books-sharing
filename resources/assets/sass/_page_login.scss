@@ -1,0 +1,24 @@
+.hero--login {
+  background: $white-ter;
+}
+
+.box--login {
+  margin-top: 2.5rem;
+}
+
+.avatar {
+  margin-top: -70px;
+  padding-bottom: 20px;
+}
+
+.avatar img {
+  padding: 5px;
+  background: $white;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+}
+
+button[type="submit"] {
+  margin: 0 auto;
+  min-width: 10rem;
+}

@@ -10774,6 +10774,40 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+.notification--errors {
+  text-align: left;
+}
+
+.hero-head {
+  border-top: 3px solid #209cee;
+}
+
+.hero--login {
+  background: whitesmoke;
+}
+
+.box--login {
+  margin-top: 2.5rem;
+}
+
+.avatar {
+  margin-top: -70px;
+  padding-bottom: 20px;
+}
+
+.avatar img {
+  padding: 5px;
+  background: white;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+button[type="submit"] {
+  margin: 0 auto;
+  min-width: 10rem;
+}
+
 html,
 body {
   font-family: 'Open Sans', serif;
